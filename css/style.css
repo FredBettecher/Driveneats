@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    width: 414px;
+}
+
+header {
+    background-color: #CF2B2B;
+}
+
+h1 {
+    font-family: "Righteous", sans-serif;
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 18px;
+}
