@@ -27,22 +27,25 @@
         <div class="pedidos">
             <p class="titulo-pedido">Primeiro, seu prato</p>
             <div class="caixa-pedidos">
-                <div class="pedido">
+                <div id="frango1" class="pedido" onclick="selecionarPrato1()">
                     <img src="./imagens/frango_yin_yang 1.png" alt="frango">
+                    <img src="./imagens/checkmark-circle 1.png" alt="check" class="check" id="check-prato1">
                     <p class="nome-pedido">Frango Yin Yang</p>
                     <p class="descricao-pedido">Um pouco de batata, um pouco de salada</p>
                     <p class="preco">R$ 14,90</p>
                 </div>
 
-                <div class="pedido">
+                <div id="frango2" class="pedido" onclick="selecionarPrato2()">
                     <img src="./imagens/frango_yin_yang 1.png" alt="frango">
+                    <img src="./imagens/checkmark-circle 1.png" alt="check" class="check" id="check-prato2">
                     <p class="nome-pedido">Frango Yin Yang</p>
                     <p class="descricao-pedido">Um pouco de batata, um pouco de salada</p>
                     <p class="preco">R$ 14,90</p>
                 </div>
 
-                <div class="pedido">
+                <div id="frango3" class="pedido" onclick="selecionarPrato3()">
                     <img src="./imagens/frango_yin_yang 1.png" alt="frango">
+                    <img src="./imagens/checkmark-circle 1.png" alt="check" class="check" id="check-prato3">
                     <p class="nome-pedido">Frango Yin Yang</p>
                     <p class="descricao-pedido">Um pouco de batata, um pouco de salada</p>
                     <p class="preco">R$ 14,90</p>
@@ -55,22 +58,25 @@
         <div class="pedidos">
             <p class="titulo-pedido">Agora, sua bebida</p>
             <div class="caixa-pedidos">
-                <div class="pedido">
+                <div id="bebida1" class="pedido" onclick="selecionarBebida1()">
                     <img src="./imagens/coquinha_gelada 1.png" alt="coca">
+                    <img src="./imagens/checkmark-circle 1.png" alt="check" class="check" id="check-bebida1">
                     <p class="nome-pedido">Coquinha gelada</p>
                     <p class="descricao-pedido">Lata 350ml</p>
                     <p class="preco">R$ 4,90</p>
                 </div>
 
-                <div class="pedido">
+                <div id="bebida2" class="pedido" onclick="selecionarBebida2()">
                     <img src="./imagens/coquinha_gelada 1.png" alt="coca">
+                    <img src="./imagens/checkmark-circle 1.png" alt="check" class="check" id="check-bebida2">
                     <p class="nome-pedido">Coquinha gelada</p>
                     <p class="descricao-pedido">Lata 350ml</p>
                     <p class="preco">R$ 4,90</p>
                 </div>
 
-                <div class="pedido">
+                <div id="bebida3" class="pedido" onclick="selecionarBebida3()">
                     <img src="./imagens/coquinha_gelada 1.png" alt="coca">
+                    <img src="./imagens/checkmark-circle 1.png" alt="check" class="check" id="check-bebida3">
                     <p class="nome-pedido">Coquinha gelada</p>
                     <p class="descricao-pedido">Lata 350ml</p>
                     <p class="preco">R$ 4,90</p>
@@ -83,22 +89,25 @@
         <div class="pedidos">
             <p class="titulo-pedido">Por fim, sua sobremesa</p>
             <div class="caixa-pedidos">
-                <div class="pedido">
+                <div id="sobremesa1" class="pedido" onclick="selecionarSobremesa1()">
                     <img src="./imagens/pudim 1.png" alt="pudim">
+                    <img src="./imagens/checkmark-circle 1.png" alt="check" class="check" id="check-sobremesa1">
                     <p class="nome-pedido">Pudim</p>
                     <p class="descricao-pedido">Apenas pudim</p>
                     <p class="preco">R$ 7,90</p>
                 </div>
 
-                <div class="pedido">
+                <div id="sobremesa2" class="pedido" onclick="selecionarSobremesa2()">
                     <img src="./imagens/pudim 1.png" alt="pudim">
+                    <img src="./imagens/checkmark-circle 1.png" alt="check" class="check" id="check-sobremesa2">
                     <p class="nome-pedido">Pudim</p>
                     <p class="descricao-pedido">Apenas pudim</p>
                     <p class="preco">R$ 7,90</p>
                 </div>
 
-                <div class="pedido">
+                <div id="sobremesa3" class="pedido" onclick="selecionarSobremesa3()">
                     <img src="./imagens/pudim 1.png" alt="pudim">
+                    <img src="./imagens/checkmark-circle 1.png" alt="check" class="check" id="check-sobremesa3">
                     <p class="nome-pedido">Pudim</p>
                     <p class="descricao-pedido">Apenas pudim</p>
                     <p class="preco">R$ 7,90</p>
@@ -110,8 +119,13 @@
     </div>
     <!-- fim container -->
     <div class="menu-inferior">
-        <div class="botao-fechar-pedido"><p class="fechar-pedido">Selecione os 3 itens para fechar o pedido</p></div>
+        <button class="botao-fechar-pedido" disabled onclick="fecharPedido()" id="botao-fechar-pedido">
+            <p class="fechar-pedido" id="texto-fechar-pedido">Selecione os 3 itens para fechar o pedido</p>
+        </button>
     </div>
+
+    <script src="./script/script.js"></script>
+    
 </body>
     </div>
 </html>
